@@ -1,0 +1,4 @@
+[tool.black]
+line-length = 98
+py36 = true
+skip-string-normalization = true
