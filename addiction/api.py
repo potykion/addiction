@@ -7,6 +7,15 @@ from addiction.modules import validate_module_has_no_dot_imports
 from addiction.packages import list_modules
 
 
+def show_dependencies(package_path: str) -> None:
+    for module in list_module_dependencies(package_path):
+        print(f"Module: {module.path}")
+        for import_ in module.imports:
+            print(import_)
+
+        print()
+
+
 def list_module_dependencies(package_path: str) -> Iterable[Module]:
     package = extract_filename(package_path)
     module_paths = list_modules(package_path)
