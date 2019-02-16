@@ -1,9 +1,9 @@
-from addiction.api import list_module_dependencies
+from addiction.api import _dependencies_generator
 from addiction.models import Module
 
 
 def test_list_module_dependencies() -> None:
-    actual_dependencies = list(list_module_dependencies("rbcn_gateway"))
+    actual_dependencies = list(_dependencies_generator("rbcn_gateway"))
 
     expected_dependencies = [
         Module("__init__", "rbcn_gateway\\__init__.py"),

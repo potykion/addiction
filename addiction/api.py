@@ -1,4 +1,7 @@
+import json
 from typing import List, Iterable
+
+import attr
 
 from addiction.files import extract_filename, read_file_as_module
 from addiction.imports import extract_imports, imports_to_modules, filter_package_imports
@@ -8,7 +11,7 @@ from addiction.packages import list_modules
 
 
 def show_dependencies(package_path: str) -> None:
-    for module in list_module_dependencies(package_path):
+    for module in _dependencies_generator(package_path):
         print(f"Module: {module.path}")
         for import_ in module.imports:
             print(import_)
@@ -16,7 +19,12 @@ def show_dependencies(package_path: str) -> None:
         print()
 
 
-def list_module_dependencies(package_path: str) -> Iterable[Module]:
+def show_dependencies_json(package_path: str) -> str:
+    dependencies = _dependencies_generator(package_path)
+    return json.dumps(list(map(attr.asdict, dependencies)), indent=2)
+
+
+def _dependencies_generator(package_path: str) -> Iterable[Module]:
     package = extract_filename(package_path)
     module_paths = list_modules(package_path)
 
