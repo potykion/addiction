@@ -1,46 +1,16 @@
 # Addiction
 
-Find dependencies between modules and packages
+Find dependencies between package modules 
 
 ## Usage
 
-To show package dependencies:
+Cli provided by [Fire](https://github.com/google/python-fire):
 
 ```
-python addict.py show_dependencies {package_path}
+python addict.py \
+--package-path C:\Users\potyk\PycharmProjects\loyalty_system\loyalty_system \
+list-dependencies-json \ 
+> deps.json
 ```
 
-For example following command:
-
-```
-python addict.py show_dependencies addiction
-```
-
-will print:
-
-```
-Module: addiction\api.py
-addiction.files
-addiction.imports
-addiction.models
-addiction.modules
-addiction.packages
-
-Module: addiction\files.py
-
-Module: addiction\imports.py
-
-Module: addiction\models.py
-
-Module: addiction\modules.py
-
-Module: addiction\packages.py
-
-Module: addiction\__init__.py
-```
-
-To show package dependencies in json format:
-
-```
-python addict.py show_dependencies_json addiction
-```
+Result can be found at `data/deps.json`

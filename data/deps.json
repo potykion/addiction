@@ -1,0 +1,989 @@
+[
+  {
+    "name": "loyalty_system.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.checks.admin",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\admin.py",
+    "imports": [
+      "loyalty_system.checks.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.checks.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\models.py",
+    "imports": [
+      "loyalty_system.general.cache_keys",
+      "loyalty_system.general.utils",
+      "loyalty_system.products.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.checks.ofd",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\ofd.py",
+    "imports": [
+      "loyalty_system.checks.utils",
+      "loyalty_system.checks.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.checks.serializers",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\serializers.py",
+    "imports": [
+      "loyalty_system.checks.ofd",
+      "loyalty_system.checks.utils",
+      "loyalty_system.general.utils",
+      "loyalty_system.history.utils",
+      "loyalty_system.products.models",
+      "loyalty_system.products.serializers",
+      "loyalty_system.promos.utils",
+      "loyalty_system.checks.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.checks.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\urls.py",
+    "imports": [
+      "loyalty_system.checks.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.checks.utils",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\utils.py",
+    "imports": [
+      "loyalty_system.checks.models",
+      "loyalty_system.gifts.models",
+      "loyalty_system.products.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.checks.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\views.py",
+    "imports": [
+      "loyalty_system.general.api_docs_parameters",
+      "loyalty_system.general.serializers",
+      "loyalty_system.general.utils",
+      "loyalty_system.users.auth",
+      "loyalty_system.users.utils",
+      "loyalty_system.checks.models",
+      "loyalty_system.checks.serializers"
+    ]
+  },
+  {
+    "name": "loyalty_system.checks.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.checks.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.checks.migrations.0002_auto_20180807_2036",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\migrations\\0002_auto_20180807_2036.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.checks.migrations.0003_auto_20181208_1730",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\migrations\\0003_auto_20181208_1730.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.checks.migrations.0004_auto_20190128_2335",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\migrations\\0004_auto_20190128_2335.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.checks.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\checks\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.config.admin",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\config\\admin.py",
+    "imports": [
+      "loyalty_system.config.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.config.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\config\\models.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.config.serializers",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\config\\serializers.py",
+    "imports": [
+      "loyalty_system.config.models",
+      "loyalty_system.restaurants.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.config.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\config\\urls.py",
+    "imports": [
+      "loyalty_system.config.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.config.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\config\\views.py",
+    "imports": [
+      "loyalty_system.config.models",
+      "loyalty_system.config.serializers",
+      "loyalty_system.general.utils"
+    ]
+  },
+  {
+    "name": "loyalty_system.config.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\config\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.config.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\config\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.config.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\config\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.api_docs_parameters",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\api_docs_parameters.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.cache_keys",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\cache_keys.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.crons",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\crons.py",
+    "imports": [
+      "loyalty_system.checks.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.general.emails",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\emails.py",
+    "imports": [
+      "loyalty_system.general.tasks",
+      "loyalty_system.users.utils"
+    ]
+  },
+  {
+    "name": "loyalty_system.general.geometry_utils",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\geometry_utils.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.hashing",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\hashing.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.middleware",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\middleware.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.serializers",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\serializers.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.tasks",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\tasks.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\urls.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.utils",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\utils.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.stats.activated_food_gifts",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\stats\\activated_food_gifts.py",
+    "imports": [
+      "loyalty_system.gifts.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.general.stats.cohorts",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\stats\\cohorts.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.stats.promo",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\stats\\promo.py",
+    "imports": [
+      "loyalty_system.checks.models",
+      "loyalty_system.general.geometry_utils",
+      "loyalty_system.general.utils",
+      "loyalty_system.history.models",
+      "loyalty_system.promos.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.general.stats.push_users",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\stats\\push_users.py",
+    "imports": [
+      "loyalty_system.checks.models",
+      "loyalty_system.gifts.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.general.stats.sheet_inserter",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\stats\\sheet_inserter.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.general.stats.stats",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\stats\\stats.py",
+    "imports": [
+      "loyalty_system.checks.models",
+      "loyalty_system.checks.utils",
+      "loyalty_system.general.stats.sheet_inserter",
+      "loyalty_system.gifts.models",
+      "loyalty_system.promos.models",
+      "loyalty_system.promos.utils",
+      "loyalty_system.restaurants.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.general.stats.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\general\\stats\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.gifts.admin",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\admin.py",
+    "imports": [
+      "loyalty_system.gifts.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.gifts.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\models.py",
+    "imports": [
+      "loyalty_system.checks.models",
+      "loyalty_system.general.cache_keys",
+      "loyalty_system.general.emails",
+      "loyalty_system.general.utils",
+      "loyalty_system.products.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.gifts.serializers",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\serializers.py",
+    "imports": [
+      "loyalty_system.gifts.models",
+      "loyalty_system.gifts.utils"
+    ]
+  },
+  {
+    "name": "loyalty_system.gifts.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\urls.py",
+    "imports": [
+      "loyalty_system.gifts.views",
+      "loyalty_system.gifts.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.gifts.utils",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\utils.py",
+    "imports": [
+      "loyalty_system.general.hashing",
+      "loyalty_system.products.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.gifts.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\views.py",
+    "imports": [
+      "loyalty_system.history.utils",
+      "loyalty_system.users.auth",
+      "loyalty_system.gifts.serializers",
+      "loyalty_system.gifts.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.gifts.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.gifts.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.gifts.migrations.0002_auto_20180807_2036",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\migrations\\0002_auto_20180807_2036.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.gifts.migrations.0003_auto_20180902_0000",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\migrations\\0003_auto_20180902_0000.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.gifts.migrations.0004_auto_20181231_0109",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\migrations\\0004_auto_20181231_0109.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.gifts.migrations.0005_auto_20190128_2335",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\migrations\\0005_auto_20190128_2335.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.gifts.migrations.0006_auto_20190204_0126",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\migrations\\0006_auto_20190204_0126.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.gifts.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\gifts\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.history.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\history\\models.py",
+    "imports": [
+      "loyalty_system.checks.models",
+      "loyalty_system.promos.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.history.serializers",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\history\\serializers.py",
+    "imports": [
+      "loyalty_system.gifts.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.history.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\history\\urls.py",
+    "imports": [
+      "loyalty_system.history.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.history.utils",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\history\\utils.py",
+    "imports": [
+      "loyalty_system.gifts.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.history.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\history\\views.py",
+    "imports": [
+      "loyalty_system.general.api_docs_parameters",
+      "loyalty_system.users.auth"
+    ]
+  },
+  {
+    "name": "loyalty_system.history.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\history\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.history.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\history\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.history.migrations.0002_auto_20180807_2036",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\history\\migrations\\0002_auto_20180807_2036.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.history.migrations.0003_useraction_user",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\history\\migrations\\0003_useraction_user.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.history.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\history\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.info.admin",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\admin.py",
+    "imports": [
+      "loyalty_system.info.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.info.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\models.py",
+    "imports": [
+      "loyalty_system.gifts.models",
+      "loyalty_system.restaurants.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.info.serializers",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\serializers.py",
+    "imports": [
+      "loyalty_system.info.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.info.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\urls.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.info.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\views.py",
+    "imports": [
+      "loyalty_system.general.api_docs_parameters",
+      "loyalty_system.restaurants.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.info.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.info.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.info.migrations.0002_faqitem_category",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\migrations\\0002_faqitem_category.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.info.migrations.0003_auto_20181231_0109",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\migrations\\0003_auto_20181231_0109.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.info.migrations.0004_auto_20190128_2335",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\migrations\\0004_auto_20190128_2335.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.info.migrations.0005_auto_20190204_0126",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\migrations\\0005_auto_20190204_0126.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.info.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\info\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.notifications.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\notifications\\models.py",
+    "imports": [
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.notifications.push_sender",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\notifications\\push_sender.py",
+    "imports": [
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.notifications.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\notifications\\urls.py",
+    "imports": [
+      "loyalty_system.notifications.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.notifications.utils",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\notifications\\utils.py",
+    "imports": [
+      "loyalty_system.general.geometry_utils",
+      "loyalty_system.notifications.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.notifications.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\notifications\\views.py",
+    "imports": [
+      "loyalty_system.notifications.utils",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.notifications.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\notifications\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.notifications.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\notifications\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.notifications.migrations.0002_auto_20180926_0120",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\notifications\\migrations\\0002_auto_20180926_0120.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.notifications.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\notifications\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.player_escort.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\player_escort\\models.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.player_escort.utils",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\player_escort\\utils.py",
+    "imports": [
+      "loyalty_system.checks.models",
+      "loyalty_system.general.utils",
+      "loyalty_system.gifts.models",
+      "loyalty_system.player_escort.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.player_escort.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\player_escort\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.player_escort.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\player_escort\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.player_escort.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\player_escort\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.plugin.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\plugin\\models.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.plugin.serializers",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\plugin\\serializers.py",
+    "imports": [
+      "loyalty_system.plugin.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.plugin.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\plugin\\urls.py",
+    "imports": [
+      "loyalty_system.plugin.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.plugin.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\plugin\\views.py",
+    "imports": [
+      "loyalty_system.plugin.serializers"
+    ]
+  },
+  {
+    "name": "loyalty_system.plugin.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\plugin\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.plugin.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\plugin\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.plugin.migrations.0002_auto_20180902_0000",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\plugin\\migrations\\0002_auto_20180902_0000.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.plugin.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\plugin\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.pretty_admin.forms",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\pretty_admin\\forms.py",
+    "imports": [
+      "loyalty_system.promos.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.pretty_admin.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\pretty_admin\\urls.py",
+    "imports": [
+      "loyalty_system.pretty_admin.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.pretty_admin.utils",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\pretty_admin\\utils.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.pretty_admin.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\pretty_admin\\views.py",
+    "imports": [
+      "loyalty_system.pretty_admin.forms",
+      "loyalty_system.pretty_admin.utils",
+      "loyalty_system.promos.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.pretty_admin.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\pretty_admin\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.products.admin",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\products\\admin.py",
+    "imports": [
+      "loyalty_system.products.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.products.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\products\\models.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.products.serializers",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\products\\serializers.py",
+    "imports": [
+      "loyalty_system.products.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.products.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\products\\urls.py",
+    "imports": [
+      "loyalty_system.products.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.products.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\products\\views.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.products.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\products\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.products.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\products\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.products.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\products\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.admin",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\admin.py",
+    "imports": [
+      "loyalty_system.promos.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.promos.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\models.py",
+    "imports": [
+      "loyalty_system.checks.models",
+      "loyalty_system.checks.utils",
+      "loyalty_system.gifts.models",
+      "loyalty_system.products.models",
+      "loyalty_system.restaurants.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.promos.serializers",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\serializers.py",
+    "imports": [
+      "loyalty_system.gifts.models",
+      "loyalty_system.gifts.serializers"
+    ]
+  },
+  {
+    "name": "loyalty_system.promos.tasks",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\tasks.py",
+    "imports": [
+      "loyalty_system.gifts.models",
+      "loyalty_system.promos.models",
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.promos.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\urls.py",
+    "imports": [
+      "loyalty_system.promos.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.promos.utils",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\utils.py",
+    "imports": [
+      "loyalty_system.checks.models",
+      "loyalty_system.checks.utils",
+      "loyalty_system.general.utils",
+      "loyalty_system.gifts.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.promos.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\views.py",
+    "imports": [
+      "loyalty_system.general.api_docs_parameters"
+    ]
+  },
+  {
+    "name": "loyalty_system.promos.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.0002_auto_20180807_2036",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\0002_auto_20180807_2036.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.0003_auto_20180907_0102",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\0003_auto_20180907_0102.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.0004_auto_20181111_1329",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\0004_auto_20181111_1329.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.0005_auto_20181208_1730",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\0005_auto_20181208_1730.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.0006_auto_20181231_0109",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\0006_auto_20181231_0109.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.0007_promo_receipt_life_duration",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\0007_promo_receipt_life_duration.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.0008_auto_20190118_0148",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\0008_auto_20190118_0148.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.0009_auto_20190128_2335",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\0009_auto_20190128_2335.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.0010_auto_20190204_0126",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\0010_auto_20190204_0126.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.promos.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\promos\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.restaurants.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\restaurants\\models.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.restaurants.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\restaurants\\urls.py",
+    "imports": [
+      "loyalty_system.restaurants.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.restaurants.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\restaurants\\views.py",
+    "imports": [
+      "loyalty_system.restaurants.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.restaurants.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\restaurants\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.restaurants.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\restaurants\\migrations\\0001_initial.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.restaurants.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\restaurants\\migrations\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.admin",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\admin.py",
+    "imports": [
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.users.auth",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\auth.py",
+    "imports": [
+      "loyalty_system.general.hashing"
+    ]
+  },
+  {
+    "name": "loyalty_system.users.forms",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\forms.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.models",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\models.py",
+    "imports": [
+      "loyalty_system.general.geometry_utils"
+    ]
+  },
+  {
+    "name": "loyalty_system.users.serializers",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\serializers.py",
+    "imports": [
+      "loyalty_system.general.utils"
+    ]
+  },
+  {
+    "name": "loyalty_system.users.urls",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\urls.py",
+    "imports": [
+      "loyalty_system.users.views"
+    ]
+  },
+  {
+    "name": "loyalty_system.users.utils",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\utils.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.views",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\views.py",
+    "imports": [
+      "loyalty_system.general.api_docs_parameters",
+      "loyalty_system.general.emails",
+      "loyalty_system.users.serializers",
+      "loyalty_system.users.auth",
+      "loyalty_system.users.forms",
+      "loyalty_system.users.models",
+      "loyalty_system.users.utils"
+    ]
+  },
+  {
+    "name": "loyalty_system.users.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\__init__.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.migrations.0001_initial",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\migrations\\0001_initial.py",
+    "imports": [
+      "loyalty_system.users.models"
+    ]
+  },
+  {
+    "name": "loyalty_system.users.migrations.0002_auto_20180902_0000",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\migrations\\0002_auto_20180902_0000.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.migrations.0003_auto_20181016_1334",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\migrations\\0003_auto_20181016_1334.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.migrations.0004_auto_20181016_1341",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\migrations\\0004_auto_20181016_1341.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.migrations.0005_auto_20181016_1342",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\migrations\\0005_auto_20181016_1342.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.migrations.0006_auto_20181016_1434",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\migrations\\0006_auto_20181016_1434.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.migrations.0007_user_monopoly_register_date",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\migrations\\0007_user_monopoly_register_date.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.migrations.0008_user_confirm_rules_2018",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\migrations\\0008_user_confirm_rules_2018.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.migrations.0009_user_registered_in_monopoly_2017",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\migrations\\0009_user_registered_in_monopoly_2017.py",
+    "imports": []
+  },
+  {
+    "name": "loyalty_system.users.migrations.__init__",
+    "path": "C:\\Users\\potyk\\PycharmProjects\\loyalty_system\\loyalty_system\\users\\migrations\\__init__.py",
+    "imports": []
+  }
+]

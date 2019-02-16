@@ -1,26 +1,17 @@
-from addiction.api import _dependencies_generator
-from addiction.models import Module
+from addiction.api import PackageDependencyIndicator, Module
 
 
-def test_list_module_dependencies() -> None:
-    actual_dependencies = list(_dependencies_generator("rbcn_gateway"))
+def test_package_dependency_indicator() -> None:
+    package = "sample_package"
 
-    expected_dependencies = [
-        Module("__init__", "rbcn_gateway\\__init__.py"),
-        Module("app", "rbcn_gateway\\app.py", ("rbcn_gateway.utils",)),
-        Module("config", "rbcn_gateway\\config.py"),
-        Module("db", "rbcn_gateway\\db.py", ("rbcn_gateway.config",)),
-        Module(
-            "handlers",
-            "rbcn_gateway\\handlers.py",
-            ("rbcn_gateway.db", "rbcn_gateway.schemas", "rbcn_gateway.models"),
-        ),
-        Module("middlewares", "rbcn_gateway\\middlewares.py", ("rbcn_gateway.config",)),
-        Module("routes", "rbcn_gateway\\routes.py", ("rbcn_gateway.handlers",)),
-        Module("utils", "rbcn_gateway\\utils.py", ("rbcn_gateway.db",)),
-        Module("child", r"rbcn_gateway\sub\child.py", ("rbcn_gateway.sub.parent",)),
-        Module("parent", r"rbcn_gateway\sub\parent.py"),
-        Module("__init__", r"rbcn_gateway\sub\__init__.py"),
+    dependencies = PackageDependencyIndicator(package).list_dependencies()
+
+    expected_modules = [
+        Module(f"{package}.parent", f"{package}\\parent.py"),
+        Module(f"{package}.child", f"{package}\\child.py", (f"{package}.parent",) * 3),
+        Module(f"{package}.__init__", f"{package}\\__init__.py"),
+        Module(f"{package}.sub.child", f"{package}\\sub\\child.py", (f"{package}.sub.parent",)),
+        Module(f"{package}.sub.parent", f"{package}\\sub\\parent.py"),
+        Module(f"{package}.sub.__init__", f"{package}\\sub\\__init__.py"),
     ]
-
-    assert set(actual_dependencies) == set(expected_dependencies)
+    assert set(dependencies) == set(expected_modules)

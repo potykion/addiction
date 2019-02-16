@@ -1,41 +1,116 @@
+import ast
 import json
-from typing import List, Iterable
+import os
+import warnings
+from glob import glob
+from typing import List, Tuple, Iterable
 
 import attr
 
-from addiction.files import extract_filename, read_file_as_module
-from addiction.imports import extract_imports, imports_to_modules, filter_package_imports
-from addiction.models import Module
-from addiction.modules import validate_module_has_no_dot_imports
-from addiction.packages import list_modules
+from addiction.utils import is_package, extract_module_name
+
+Dependency = str
 
 
-def show_dependencies(package_path: str) -> None:
-    for module in _dependencies_generator(package_path):
-        print(f"Module: {module.path}")
-        for import_ in module.imports:
-            print(import_)
-
-        print()
+@attr.s(auto_attribs=True, frozen=True)
+class Module:
+    name: str
+    path: str
+    imports: Tuple[str, ...] = attr.ib(factory=tuple)
 
 
-def show_dependencies_json(package_path: str) -> str:
-    dependencies = _dependencies_generator(package_path)
-    return json.dumps(list(map(attr.asdict, dependencies)), indent=2)
+@attr.s(auto_attribs=True)
+class PackageDependencyIndicator:
+    package_path: str = attr.ib()
 
+    @package_path.validator
+    def package_path_validator(self, _: str, value: str) -> None:
+        if not is_package(value):
+            raise ValueError(f'"{value}" is not a package.')
 
-def _dependencies_generator(package_path: str) -> Iterable[Module]:
-    package = extract_filename(package_path)
-    module_paths = list_modules(package_path)
+    def list_dependencies(self) -> List[Module]:
+        return [
+            Module(
+                name=extract_module_name(module, self.package_path),
+                path=module,
+                imports=tuple(self._module_dependency_generator(module)),
+            )
+            for module in self.list_modules()
+        ]
 
-    for path in module_paths:
-        if not validate_module_has_no_dot_imports(path):
-            raise ValueError(f"Module '{path}' has dot imports!")
+    def list_dependencies_json(self) -> str:
+        return json.dumps(list(map(attr.asdict, self.list_dependencies())), indent=2)
 
-        name = extract_filename(path)
-        package_imports = filter_package_imports(
-            extract_imports(read_file_as_module(path)), package
-        )
-        module_imports = tuple(imports_to_modules(package_imports))
+    def list_modules(self) -> List[str]:
+        return glob(os.path.join(self.package_path, "**", "*.py"), recursive=True)
 
-        yield Module(name, path, module_imports)
+    @property
+    def package_name(self) -> str:
+        return os.path.basename(self.package_path)
+
+    def _module_dependency_generator(self, module_path: str) -> Iterable[Dependency]:
+        with open(module_path, encoding="utf-8") as f:
+            module: ast.Module = ast.parse(f.read())
+
+        module_imports = [
+            statement
+            for statement in module.body
+            if isinstance(statement, (ast.Import, ast.ImportFrom))
+        ]
+
+        # ast.Import.names - imported names (package, module) as alias
+        #   alias.name - imported name
+        for import_statement in module_imports:
+            if isinstance(import_statement, ast.Import):
+                # import {package}, {module}
+                for imported in import_statement.names:
+                    name = imported.name
+                    # import .utils
+                    assert not name.startswith("."), "No dot imports allowed."
+
+                    # import ast
+                    if not name.startswith(self.package_name):
+                        continue
+
+                    name_without_package = name[len(self.package_name) + 1 :]
+                    # import addiction
+                    if not name_without_package:
+                        warnings.warn(f"No package imports supported ({name}).")
+                        continue
+
+                    # import addiction.utils (utils is package)
+                    if is_package(
+                        os.path.join(self.package_path, *name_without_package.split("."))
+                    ):
+                        warnings.warn(f"No package imports supported ({name}).")
+                        continue
+
+                    # import addiction.utils (utils is module)
+                    yield name
+
+            # ast.ImportFrom.module - import from module/package
+            # ast.ImportFrom.names - imported names (module, vars) as alias
+            #   alias.name - imported name
+            if isinstance(import_statement, ast.ImportFrom):
+                import_from = import_statement.module
+
+                # from .utils import is_package
+                assert import_from and not import_from.startswith(
+                    "."
+                ), f"Dot import found in '{module_path}'."
+
+                # from typing import List
+                if not import_from.startswith(self.package_name):
+                    continue
+
+                import_from_without_package = import_from[len(self.package_name) + 1 :]
+                # from addiction import utils
+                if is_package(
+                    os.path.join(self.package_path, *import_from_without_package.split("."))
+                ):
+                    yield from (
+                        f"{import_from}.{imported.name}" for imported in import_statement.names
+                    )
+                # from addiction.utils import is_package
+                else:
+                    yield import_from
