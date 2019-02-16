@@ -12,6 +12,9 @@ def test_list_modules() -> None:
         'rbcn_gateway\\routes.py',
         'rbcn_gateway\\utils.py',
         'rbcn_gateway\\__init__.py',
+        'rbcn_gateway\\sub\\child.py',
+        'rbcn_gateway\\sub\\parent.py',
+        'rbcn_gateway\\sub\\__init__.py',
     ]
 
     assert actual_modules == expected_modules

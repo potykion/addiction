@@ -18,6 +18,9 @@ def test_list_module_dependencies() -> None:
         Module("middlewares", "rbcn_gateway\\middlewares.py", ("rbcn_gateway.config",)),
         Module("routes", "rbcn_gateway\\routes.py", ("rbcn_gateway.handlers",)),
         Module("utils", "rbcn_gateway\\utils.py", ("rbcn_gateway.db",)),
+        Module("child", r"rbcn_gateway\sub\child.py", ("rbcn_gateway.sub.parent",)),
+        Module("parent", r"rbcn_gateway\sub\parent.py"),
+        Module("__init__", r"rbcn_gateway\sub\__init__.py"),
     ]
 
     assert set(actual_dependencies) == set(expected_dependencies)
