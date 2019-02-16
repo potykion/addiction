@@ -4,6 +4,8 @@ Find dependencies between modules and packages
 
 ## Usage
 
+To show package dependencies:
+
 ```
 python addict.py show_dependencies {package_path}
 ```
@@ -37,3 +39,8 @@ Module: addiction\packages.py
 Module: addiction\__init__.py
 ```
 
+To show package dependencies in json format:
+
+```
+python addict.py show_dependencies_json addiction
+```
